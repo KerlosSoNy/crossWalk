@@ -28,7 +28,7 @@ const Hero = () => (
       </div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
+        className="relative w-[99vw] md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
         <Image
@@ -37,7 +37,7 @@ const Hero = () => (
           height={1000}
           alt="cover"
           priority={true}
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+          className="w-full xl:w-[1580px] 2xl:w-[1580px] 2xl:h-[600px] sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
         {/* <Link href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">

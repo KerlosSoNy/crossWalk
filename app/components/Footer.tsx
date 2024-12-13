@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { socials } from "../constants";
 import { footerVariants } from "../utils/motion";
+import Link from "next/link";
 
 const Footer = () => (
   <>
@@ -42,16 +43,22 @@ const Footer = () => (
             <p className="font-normal text-[14px] text-white opacity-50">
               Copyright © 2024 - 2025 CapsCode. All rights reserved.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 z-[5000]">
               {socials.map((social) => (
-                <Image
+                <Link
+                  className="hover:cursor-pointer"
+                  target="_blank"
+                  title={social.name}
                   key={social.name}
-                  src={social.url}
-                  width={24}
-                  height={24}
-                  alt={social.name}
-                  className="object-contain cursor-pointer"
-                />
+                  href={social.link}>
+                  <Image
+                    src={social.url}
+                    width={24}
+                    height={24}
+                    alt={social.name}
+                    className="object-contain cursor-pointer"
+                  />
+                </Link>
               ))}
             </div>
           </div>

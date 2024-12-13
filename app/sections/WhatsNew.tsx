@@ -28,21 +28,21 @@ const WhatsNew = () => (
           ))}
         </div>
       </motion.div>
-      <FloatingComponent>
-        <motion.div
-          variants={planetVariants("up")}
-          className="flex-1 flexCenter"
-        >
-          <Image
-            src="/whats-new.png"
-            width={1000}
-            height={1000}
-            priority={true}
-            alt="whats-new"
-            className="w-[90%] h-[90%] object-contain"
-          />
-        </motion.div>
-      </FloatingComponent>
+      {/* <FloatingComponent> */}
+      <motion.div
+        variants={planetVariants("up")}
+        className="flex-1 flexCenter"
+      >
+        <Image
+          src="/whats-new.png"
+          width={1000}
+          height={1000}
+          priority={true}
+          alt="whats-new"
+          className="w-[90%] h-[90%] object-contain"
+        />
+      </motion.div>
+      {/* </FloatingComponent> */}
     </motion.div>
   </section>
 );

@@ -1,4 +1,3 @@
-import { Footer, Navbar } from "./components";
 import {
   About,
   Explore,
@@ -13,7 +12,6 @@ import {
 export default function Home() {
   return (
     <main className="bg-primary-black overflow-hidden">
-      <Navbar />
       <Hero />
       <section className="relative">
         <About />
@@ -31,7 +29,6 @@ export default function Home() {
         <div className="gradient-03 z-0" />
         <Feedback />
       </section>
-      <Footer />
     </main>
   );
 }

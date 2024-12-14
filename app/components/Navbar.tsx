@@ -21,7 +21,7 @@ const Navbar = () => (
           alt="search"
           className="object-contain"
         />
-        <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
+        <h2 className="font-extrabold text-[24px] pe-12 leading-[30.24px] text-white">
           CrossWalk
         </h2>
         <Image

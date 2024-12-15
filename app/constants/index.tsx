@@ -82,7 +82,7 @@ export const products = [
   {
     title: "SEO Optimization",
     link: "https://seomarketing.com",
-    thumbnail: "/seo.avif",
+    thumbnail: "/Seo.avif",
     description: "Enhance your website's search engine ranking with targeted SEO strategies."
   },
   {

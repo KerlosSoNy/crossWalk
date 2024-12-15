@@ -190,11 +190,11 @@ export const socials = [
   {
     name: "instagram",
     url: "/instagram.svg",
-    link: 'https://www.facebook.com/profile.php?id=61568143924532'
+    link: 'https://www.instagram.com/crosswalk.adv/'
   },
   {
     name: "facebook",
     url: "/facebook.svg",
-    link: 'https://www.instagram.com/crosswalk.adv/'
+    link: 'https://www.facebook.com/profile.php?id=61568143924532'
   },
 ];

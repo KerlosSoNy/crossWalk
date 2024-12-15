@@ -1,14 +1,14 @@
-import React from 'react'
-import { HeroParallax } from '../components/ui/hero-parallax';
-import { products } from '../constants';
 import { Metadata } from 'next';
+import React from 'react'
+import AchievementStory from '../components/achiveOurStory/achiveOurStory';
+
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://cross-walk.vercel.app/services"),
+    metadataBase: new URL("https://cross-walk.vercel.app/about-us"),
     title: {
         default: "CrossWalk",
         template:
-            "%s | Services - CrossWalk",
+            "%s | About Us - CrossWalk",
     },
     description:
         "Welcome to CrossWalk Marketing, your go-to destination for innovative marketing strategies, impactful branding solutions, and expert insights into the world of advertising. Whether you're a budding entrepreneur or an established business, our curated services and resources empower you to elevate your brand, reach your target audience, and stay ahead of the latest marketing trends. Join our community and unlock the potential of your business with CrossWalk Marketing!",
@@ -27,11 +27,10 @@ export const metadata: Metadata = {
     },
 };
 
-
-export default function Page() {
+export default function AboutUS() {
     return (
-        <HeroParallax products={products} />
+        <div className="flex flex-col items-center justify-center">
+            <AchievementStory />
+        </div>
     )
 }
-
-

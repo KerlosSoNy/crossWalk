@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
+import SideMenu from "./sideBar";
 
 const Navbar = () => (
   <header>
@@ -24,13 +25,7 @@ const Navbar = () => (
         <h2 className="font-extrabold text-[24px] pe-12 leading-[30.24px] text-white">
           CrossWalk
         </h2>
-        <Image
-          src="/menu.svg"
-          width={24}
-          height={24}
-          alt="menu"
-          className="object-contain"
-        />
+        <SideMenu />
       </div>
     </motion.nav>
   </header>

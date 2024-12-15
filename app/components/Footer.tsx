@@ -20,8 +20,8 @@ const Footer = () => (
           <h4 className="font-bold md:text-[64px] text-[44px] text-white">
             Enter the CrossWalk
           </h4>
-          <button
-            type="button"
+          <Link
+            href="mailto:crosswalk.eg@gmail.com"
             className="flex items-center h-fit py-4 px-6 bg-[#2561AB] rounded-[32px] gap-[12px]"
           >
             <Image
@@ -34,7 +34,7 @@ const Footer = () => (
             <span className="font-normal text-[16px] text-white uppercase">
               enter CrossWalk
             </span>
-          </button>
+          </Link>
         </div>
         <div className="flex flex-col">
           <div className="mb-[50px] h-[2px] bg-white opacity-10" />
